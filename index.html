@@ -4,48 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
-    <header>
-      <nav>
-        <!--logotype-->
-        <a href="#/">
-          <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
-        </a>
-        <ul>
-          <li><a href="#traditional_section">Наші традиції</a></li>
-          <li><a href="#coocer_section">Шеф-кухарі</a></li>
-          <li><a href="#format_section">Формати</a></li>
-          <li><a href="#contact_section">Контакти</a></li>
-        </ul>
-      </nav>
-      <!--замовити звінок-->
-      <button type="button">Замовити звінок</button>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="/">
+              <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+            </a>
+            <ul class="header__menu">
+              <li>
+                <a class="link" href="#traditions-section">Наші традиції</a>
+              </li>
+              <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#formats-section">Формати</a></li>
+              <li><a class="link" href="#contact-section">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main>
-      <!--sectiom 1-->
-      <section>
-        <h1>Сучасна пекарня</h1>
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-section__title">
+            <span class="text-brand">Сучасна</span> пекарня
+          </h1>
+          <button
+            class="hero-section__button button modal-btn-open"
+            type="button"
+          >
+            Замовити дзвінок
+          </button>
+        </div>
       </section>
-      <!--sectiom 2-->
-      <section id="traditional_section">
-        <ul>
-          <li>Великий попит на ринку</li>
-          <li>Доступні за бюджетом формати</li>
-          <li>Досвідчена управлінська команд</li>
-        </ul>
-        <h2>Новий формат традицій</h2>
-        <p>
-          <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
-          зберегла смак традиційної випічки та натуральність інгредієнтів
-        </p>
-        <p>
-          Ми працюємо як найвідоміші мережі —
-          <span>5 хвилин і замовлення готове</span> . А ще у наших пекарень
-          стильний дизайн та висока якість обслуговування!
-        </p>
-        <img src="./images/baker-man.jpg" alt="пекар, що сміється" />
+      <section class="advantages-section">
+        <div class="container">
+          <h2 class="visually-hidden">Наші переваги</h2>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">Великий попит на ринку</li>
+            <li class="advantages-section__item">
+              Доступні за бюджетом формати
+            </li>
+            <li class="advantages-section__item">
+              Досвідчена управлінська команда
+            </li>
+          </ul>
+        </div>
       </section>
       <!--sectiom 3-->
       <section id="coocer_section">
